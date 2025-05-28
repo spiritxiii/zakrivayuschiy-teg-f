@@ -1,1 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font-family: 'Inter';
+  --accent-font-family: 'PressStart2P Regular';
+  --main-font-weight: 400;
+  --card-header-font-weight: 700;
+  --section-i-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --section-b-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem);
+  --card-i-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --logo-subtext-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --main-list-gap: 52px;
+}
+
+@media (width <= 375px) {
+  :root {
+    --main-list-gap: 50px;
+  }
+}
