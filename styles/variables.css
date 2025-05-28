@@ -4,16 +4,27 @@
   --accent-font-family: 'PressStart2P Regular';
   --main-font-weight: 400;
   --card-header-font-weight: 700;
+  --gap: 20px;
   --section-i-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --section-b-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem);
   --card-i-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  --card-header-b-size: 33px;
+  --save-button-i-size: clamp(19.375rem, 18.7368rem + 2.723vw, 21.1875rem);
+  --save-button-gap: 8px;
+  --save-button-margin-b-end: 3px;
   --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --logo-subtext-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --main-list-gap: 52px;
+  --icon-save-size: 21px;
+  --dialog-i-padding: 30px;
+  --dialog-b-padding: 30px;
+  --dialog-text-i-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);;
 }
 
 @media (width <= 375px) {
   :root {
-    --main-list-gap: 50px;
+    --icon-save-size: 28px;
+    --save-button-gap: 9px;
+    --save-button-margin-b-end: 0;
+    --dialog-i-padding: 40px;
   }
 }
