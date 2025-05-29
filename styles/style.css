@@ -96,6 +96,7 @@
 
 .card__image-wrapper {
   position: relative;
+  overflow: hidden;
   isolation: isolate; /* Изолируем слой картинок с mix-blend-mode от фонового градиента */
 }
 
