@@ -34,8 +34,6 @@
   padding-block: 100px;
   background-image: var(--page-bg-image);
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .list {
