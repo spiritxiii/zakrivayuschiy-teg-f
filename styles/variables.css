@@ -20,13 +20,17 @@
   --dialog-b-padding: 30px;
   --dialog-text-i-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
   /* Фильтры для изображений */
+  --freetrek-filter: invert(0.8);
   --clean-sheet-filter: grayscale(0.8) brightness(125%);
   --if-doesnt-work-filter: saturate(300%);
-  --pursuit-ideal-filter: hue-rotate(30deg);
-  --someone-nearby-filter: invert(0.8);
+  --clean-sheet-filter: grayscale(0.8) brightness(125%);
+  --pursuit-ideal-filter: contrast(110%) brightness(120%) contrast(110%)
+    saturate(150%) hue-rotate(15deg);
+  --someone-nearby-filter: contrast(110%) brightness(90%) saturate(110%)
+    sepia(20%) hue-rotate(-5deg);
   --workarounds-strategies-filter: sepia(90%);
-  --hands-down-filter: blur(1rem);
-  --i-am-here-filter: hue-rotate(81deg) contrast(60%) blur(0.2rem);
+  --hands-down-filter: grayscale(80%) contrast(120%) brightness(85%);
+  --i-am-here-filter: contrast(120%);
   /* END Фильтры для изображений */
   --page-bg-image:
     repeating-linear-gradient(

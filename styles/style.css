@@ -286,6 +286,10 @@
   block-size: 38px;
 }
 
+.freetrek-filter {
+  filter: var(--freetrek-filter);
+}
+
 .clean-sheet-filter {
   filter: var(--clean-sheet-filter);
 }
