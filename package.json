@@ -1,0 +1,27 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"**/*.css\"",
+    "lintfix": "stylelint \"**/*.css\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiritxiii/zakrivayuschiy-teg-f.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiritxiii/zakrivayuschiy-teg-f/issues"
+  },
+  "homepage": "https://github.com/spiritxiii/zakrivayuschiy-teg-f#readme",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.5.3",
+    "stylelint": "^16.20.0"
+  }
+}

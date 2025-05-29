@@ -1,4 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
 :root {
   --main-font-family: 'Inter';
   --accent-font-family: 'PressStart2P Regular';
@@ -17,10 +18,40 @@
   --icon-save-size: 21px;
   --dialog-i-padding: 30px;
   --dialog-b-padding: 30px;
-  --dialog-text-i-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);;
+  --dialog-text-i-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
+  /* Фильтры для изображений */
+  --clean-sheet-filter: grayscale(0.8) brightness(125%);
+  --if-doesnt-work-filter: saturate(300%);
+  --pursuit-ideal-filter: hue-rotate(30deg);
+  --someone-nearby-filter: invert(0.8);
+  --workarounds-strategies-filter: sepia(90%);
+  --hands-down-filter: blur(1rem);
+  --i-am-here-filter: hue-rotate(81deg) contrast(60%) blur(0.2rem);
+  /* END Фильтры для изображений */
+  --page-bg-image:
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --main-bg-color: #fff;
+  --button-text-color: #fff;
+  --contour-color: #000;
+  --heart-body-color: red;
 }
 
 @media (width <= 375px) {
+  
   :root {
     --icon-save-size: 28px;
     --save-button-gap: 9px;
