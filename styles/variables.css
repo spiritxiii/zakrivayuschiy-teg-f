@@ -2,14 +2,13 @@
 
 :root {
   --main-font-family: 'Inter';
-  --accent-font-family: 'PressStart2P Regular';
+  --accent-font-family: 'PressStart2P';
   --main-font-weight: 400;
   --card-header-font-weight: 700;
   --gap: 20px;
+  --header-b-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
   --section-i-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  --section-b-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem);
   --card-i-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
-  --card-header-b-size: 33px;
   --save-button-i-size: clamp(19.375rem, 18.7368rem + 2.723vw, 21.1875rem);
   --save-button-gap: 8px;
   --save-button-margin-b-end: 3px;
@@ -19,19 +18,26 @@
   --dialog-i-padding: 30px;
   --dialog-b-padding: 30px;
   --dialog-text-i-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
-  /* Фильтры для изображений */
-  --freetrek-filter: invert(0.8);
-  --clean-sheet-filter: grayscale(0.8) brightness(125%);
-  --if-doesnt-work-filter: saturate(300%);
-  --clean-sheet-filter: grayscale(0.8) brightness(125%);
-  --pursuit-ideal-filter: contrast(110%) brightness(120%) contrast(110%)
-    saturate(150%) hue-rotate(15deg);
-  --someone-nearby-filter: contrast(110%) brightness(90%) saturate(110%)
-    sepia(20%) hue-rotate(-5deg);
-  --workarounds-strategies-filter: sepia(90%);
-  --hands-down-filter: grayscale(80%) contrast(120%) brightness(85%);
-  --i-am-here-filter: contrast(120%);
-  /* END Фильтры для изображений */
+  /* Простые фильтры для изображений */
+  --invert-filter: invert(0.8);
+  --contrast-filter: contrast(120%);
+  --sepia-more-filter: sepia(110%);
+  --sepia-less-filter: sepia(20%);
+  --brightness-more-filter: brightness(125%);
+  --brightness-less-filter: brightness(90%);
+  --grayscale-filter: grayscale(0.8);
+  --saturate-more-filter: saturate(150%);
+  --saturate-less-filter: saturate(50%);
+  /* END Простые фильтры для изображений */
+  /* Множественные фильтры для изображений */
+  --grayscale-brightness-filter: var(--grayscale-filter)
+    var(--brightness-more-filter);
+  --contrast-saturate-filter: var(--contrast-filter) var(--saturate-more-filter);
+  --cinematic-filter: var(--contrast-filter) var(--brightness-less-filter)
+    var(--saturate-more-filter) var(--sepia-less-filter);
+  --sad-filter: var(--grayscale-filter) var(--contrast-filter)
+    var(--brightness-less-filter) var(--saturate-less-filter);
+  /* END Множественные ильтры для изображений */
   --page-bg-image:
     repeating-linear-gradient(
       to right,
